@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site - Contato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>MeuSite</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <h2>Entre em Contato</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Informações de Contato</h3>
+              <div class="contact-item">
+                <h4>Email</h4>
+                <p>contato@meusite.com</p>
+              </div>
+              <div class="contact-item">
+                <h4>Telefone</h4>
+                <p>(11) 99999-9999</p>
+              </div>
+              <div class="contact-item">
+                <h4>Endereço</h4>
+                <p>Rua Exemplo, 123<br />São Paulo, SP</p>
+              </div>
+              <div class="contact-item">
+                <h4>Horário de Atendimento</h4>
+                <p>Segunda a Sexta: 9h às 18h</p>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <h3>Envie uma Mensagem</h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name">Nome:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Assunto:</label>
+                  <input type="text" id="subject" name="subject" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 MeuSite. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
