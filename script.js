@@ -31,9 +31,33 @@ function initSmoothScroll() {
   });
 }
 
+function handleContactForm() {
+  const contactForm = document.getElementById('contactForm');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+      };
+
+      console.log('Dados do formulário:', formData);
+
+      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+
+      contactForm.reset();
+    });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   highlightActiveMenu();
   initSmoothScroll();
+  handleContactForm();
 
   document.body.classList.add('loaded');
 });
