@@ -54,10 +54,43 @@ function handleContactForm() {
   }
 }
 
+function loadFeatures() {
+  const featuresContainer = document.querySelector('.feature-grid');
+
+  if (featuresContainer) {
+    const features = [
+      {
+        title: 'Qualidade',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      },
+      {
+        title: 'Inovação',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      },
+      {
+        title: 'Suporte',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      },
+    ];
+
+    featuresContainer.innerHTML = features
+      .map(
+        feature => `
+            <div class="feature">
+                <h3>${feature.title}</h3>
+                <p>${feature.description}</p>
+            </div>
+        `
+      )
+      .join('');
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   highlightActiveMenu();
   initSmoothScroll();
   handleContactForm();
+  loadFeatures();
 
   document.body.classList.add('loaded');
 });
