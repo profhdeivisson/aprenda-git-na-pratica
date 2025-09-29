@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aprenda GIT na Prática</title>
+    <title>Meu Site - Página Inicial</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Tìtulo da página</h1>
-    <p>Parágrafo</p>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>MeuSite</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Bem-vindo ao Meu Site</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget
+            ultricies nisl nisl eget nisl.
+          </p>
+          <button class="btn">Saiba Mais</button>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Recurso 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature">
+              <h3>Recurso 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature">
+              <h3>Recurso 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 MeuSite. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
